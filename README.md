@@ -51,5 +51,21 @@ Play CNN FHD US?
 ```
 This allows you to simply press return to play this channel, **S** to skip it and search for the next match, or **Q** to quit.
 
+omxplayer commands
+--------------------------------------------------------------------------
+
+Once a live TV stream has been launched, you will see the details from omxplayer:
+```
+Play CNN FHD US?
+(S)kip, (Q)uit or (Return) to play: 
+Video codec omx-h264 width 960 height 540 profile 77 fps 25.000000
+Audio codec aac channels 2 samplerate 48000 bitspersample 16
+Subtitle count: 0, state: off, index: 1, delay: 0
+V:PortSettingsChanged: 960x540@25.00 interlace:0 deinterlace:0 anaglyph:0 par:1.00 display:5 layer:0 alpha:255 aspectMode:0
+```
+While in playing state, you can control **omxplayer** from the terminal window. Some example commands are:
+* +: increase volume by 3.0dB
+* -: decrease volume by 3.0dB
+* q: quit omxplayer
 
 
