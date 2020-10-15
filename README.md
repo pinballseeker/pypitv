@@ -67,4 +67,5 @@ While in playing state, you can control **omxplayer** from the terminal window. 
 * +: increase volume by 3.0dB
 * -: decrease volume by 3.0dB
 * q: quit omxplayer
-You can of course use all the options available in omxplayer during playback. [Full details here](https://www.raspberrypi.org/documentation/raspbian/applications/omxplayer.md)
+
+You can of course use all [the options available in omxplayer](https://www.raspberrypi.org/documentation/raspbian/applications/omxplayer.md) during playback.
