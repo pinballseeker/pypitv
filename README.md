@@ -3,6 +3,8 @@ pypitv
 
 **pypitv** is a python script to parse iptv m3u playlists and play live streams on a Raspberry Pi using [omxplayer](https://www.raspberrypi.org/documentation/raspbian/applications/omxplayer.md). **pypitv** can be run from any terminal, but send the live stream to the HDMI output. The original goal was to play iptv streams on a 'headless' Raspberry Pi with a connected HDMI monitor straight from an SSH terminal.
 
+Additionally, **pypitv** can read a customized channel list from a file and allow the same playing functionality for those channels. See **customization** below for more details.
+
 Dependencies
 --------------------------------------------------------------------------
 
@@ -69,3 +71,6 @@ While in playing state, you can control **omxplayer** from the terminal window. 
 * q: quit omxplayer (and return to **pypitv**)
 
 You can of course use all the [options available in omxplayer](https://www.raspberrypi.org/documentation/raspbian/applications/omxplayer.md) during playback.
+
+Customization
+--------------------------------------------------------------------------
