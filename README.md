@@ -66,6 +66,6 @@ V:PortSettingsChanged: 960x540@25.00 interlace:0 deinterlace:0 anaglyph:0 par:1.
 While in playing state, you can control **omxplayer** from the terminal window. Some example commands are:
 * +: increase volume by 3.0dB
 * -: decrease volume by 3.0dB
-* q: quit omxplayer
+* q: quit omxplayer (and return to **pypitv**)
 
-You can of course use all [the options available in omxplayer](https://www.raspberrypi.org/documentation/raspbian/applications/omxplayer.md) during playback.
+You can of course use all the [options available in omxplayer](https://www.raspberrypi.org/documentation/raspbian/applications/omxplayer.md) during playback.
