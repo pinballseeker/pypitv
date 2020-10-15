@@ -86,3 +86,33 @@ channel name;channel_url
 ```
 
 Once the file has been created and populated with channel name/url pairs, those channels will be included in channel searching and will take priority over iptv channels.
+
+pypitv Settings
+--------------------------------------------------------------------------
+
+When **pypitv** is run for the first time, a settings file is created:
+```
+./.pypitv-settings
+```
+
+This file contains the settings for **pypitv** which can be easily modified with a text editor. All options are in the form of key/value pairs, seperated by a semi-colon:
+```
+update_stmp;1602763550.846737
+default_volume;0
+default_display;5
+refresh_hours;16
+ask_before_playing;yes
+first_match_only;no
+silent;no
+m3u_url;YOUR_M3U_URL
+```
+
+Here's what the options do:
+* **update_stmp** is the time your M3U file was last updated. Setting this to 0 will force a refresh upon next launch. Leave alone otherwise.
+* **default_volume** is the default volume used when starting **omxplayer** in millibels. The default is 0. To set teh default to e.g. -5dB, set this value to -5000.
+* **default_display** the display (monitor) to use to display the live TV. The default value is 5, which is the Raspberry Pi's HDMI output.
+* **refresh_hours** the nunber of hours between refreshing your M3U URL. The default is 16 hours, 0 would force a refresh on each usage. If your channel list is large, it might be a good idea not to refresh too often.
+* **ask_before_playing** controls whether **pypitv** asks you to confirm before starting playback. This also allows you to skip a channel or quit. Setting this to no will make playback happen automatically.
+* **first_match_only** can be set to yes to play only the first channel found, then exit. The default **no** makes **pypitv** cycle through all results and play each channel sequentially.
+* **silent** is by default set to **no**, so all output from omxplayer is displayed in the terminal. Setting this to **yes** will suppress all omxplayer output.
+* **m3u_url** the URL for your iptv M3U playlist, as provided by your iptv provider.
