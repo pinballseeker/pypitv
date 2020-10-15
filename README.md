@@ -74,3 +74,15 @@ You can of course use all the [options available in omxplayer](https://www.raspb
 
 Customization
 --------------------------------------------------------------------------
+
+To add your own, local channels to **pypitv**, simple create the following file in your working directory:
+```
+./.pypitv-custom-channels
+```
+
+This file shall contain your local channels and shall be formatted as name and URL pairs, seperated with a semi-colon:
+```
+channel name;channel_url
+```
+
+Once the file has been created and populated with channel name/url pairs, those channels will be included in channel searching and will take priority over iptv channels.
